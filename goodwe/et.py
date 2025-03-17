@@ -66,9 +66,9 @@ class ET(Inverter):
         Integer("grid_mode", 35136, "Grid Mode code", "", Kind.PV),
         Enum2("grid_mode_label", 35136, GRID_MODES, "Grid Mode", Kind.PV),
         # 35137 reserved
-        PowerS("total_inverter_power", 35138, "Total Power", Kind.AC),
+        Power4S("total_inverter_power", 35137, "Total Power", Kind.AC),
         # 35139 reserved
-        PowerS("active_power", 35140, "Active Power", Kind.GRID),
+        Power4S("active_power", 35139, "Active Power", Kind.GRID),
         Calculated("grid_in_out",
                    lambda data: read_grid_mode(data, 35140),
                    "On-grid Mode code", "", Kind.GRID),
