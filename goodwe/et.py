@@ -430,7 +430,7 @@ class ET(Inverter):
         # RW settings of BMS voltage rate
         Integer("bms2_battery_string_rate_v", 47935, "BMS2 Battery String Rate Voltage"),
         Integer("min_discharge_soc", 45558, "Minimum SoC for Discharge", "%", Kind.BAT),
-        Integer("min_discharge_soc", 45559, "Minimum SoC for Discharge", "%", Kind.BAT),
+        Integer("max_charge_soc", 45559, "Minimum SoC for Charge", "%", Kind.BAT),
     )
 
     # Settings added in ARM firmware 19
